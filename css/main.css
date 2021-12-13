@@ -1,0 +1,161 @@
+/* DEVELOPER: Ben Bandila, IS 117-005, Fall 2021 */
+body {
+    font-size: 100%;
+    background-color: #186f0c;
+    width: 1000px;
+    margin: 0 auto 0;
+    padding-bottom: 50px;
+    border: 2px solid white;
+}
+
+body p, body li {
+    color: white;
+}
+
+/* navigation menu css */
+#nav_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#nav_menu li {
+    float: left;
+}
+
+#nav_menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+}
+
+#dropdown li {
+    float: none;
+}
+
+#nav_menu li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+li a {
+    display: block;
+    width: 199px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+}
+
+/* header and titles css */
+header {
+    text-align: center;
+    font-size: 200%;
+    border-bottom: 2px solid white;
+}
+
+header h1 {
+    font-size: 200%;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/* footer css */
+.footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 1000px;
+    background-color: green;
+    height: 50px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+/* image css */
+img {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.intro-img {
+    text-align: center;
+    float: left;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+/* columns for columns */
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.column img {
+    display: table;
+    margin: 0 auto;
+}
+
+.h2h ul {
+    display: table;
+    margin: 0 auto;
+}
+
+/* contact page css */
+label {
+    color: white;
+}
+
+.btn-primary {
+    background-color: yellowgreen;
+    border: yellowgreen;
+}
+
+/* vote page css */
+.vote_column{
+    float: left;
+    width: 50%;
+}
+
+.submit_button {
+    text-align: center;
+    margin: 0 auto;
+}
